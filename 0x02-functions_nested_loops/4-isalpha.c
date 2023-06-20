@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - main function
- * @c is a character to compier
+ * @c : a  character to compare
  * Return: 1 if c is letter ; 0 if else
  */
 
