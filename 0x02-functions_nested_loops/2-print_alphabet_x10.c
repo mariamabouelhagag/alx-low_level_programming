@@ -8,7 +8,6 @@
 void print_alphabet_x10(void)
 {
 	char letter;
-	int j;
 
 	letter = 'a';
 
@@ -21,7 +20,7 @@ void print_alphabet_x10(void)
 			_putchar (letter);
 				 j++;
 		}
-		lette++;
+		letter++;
 		_putchar('\n');
 	}
 }
