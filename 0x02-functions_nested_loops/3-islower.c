@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * int _islower(int c) - return to 1 if c is lower
+ *  _islower - main function
+ *
+ * @c: character to compare
  * Return: 1 if true , 0 if false
  */
 
 int _islower(int c)
 {
-	int c;
-
 	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
