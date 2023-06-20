@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - print _putchar
- * write every char in new line
+ *is writen by mbah
  * return : 0
  */
 int main(void)
