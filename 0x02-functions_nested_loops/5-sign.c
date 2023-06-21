@@ -2,7 +2,7 @@
 
 /**
  * print_sign - print the sign of a number.
- * n : character to compare
+ * @n : character to compare
  * Return: 1 if positive, 0 if zero, -1 if negative
 */
 
@@ -22,7 +22,7 @@ int print_sign(int n)
 	else
 	{
 
-	_putchar('-');
-	return (-1);
+        	_putchar('-');
+        	return (-1);
 	}
 }
