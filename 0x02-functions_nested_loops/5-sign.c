@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_sign - main function
+ * print_sing - print the sign of a number
  *
  * @n: character to compare
  *
