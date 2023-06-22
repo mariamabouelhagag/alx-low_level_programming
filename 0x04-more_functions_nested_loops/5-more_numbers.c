@@ -4,19 +4,20 @@
  * prints from 0 to 14
  */
 void more_numbers(void)
+	void more_numbers(void)
 {
 	int a;
 	int j;
 
-	for (a = 0; a < 10; a++)
+	for (j = 0; j <= 9; j++)
 	{
-		for (j = 0; j <= 14; j++)
+		for (a = 0; a <= 14; a++)
 		{
-			for (j > 9)
+			if (a > 9)
 			{
-				_putchar(j / 10 + '0');
+				_putchar(a / 10 + '0');
 			}
-			_putchar(j % 10 + '0');
+			_putchar(a % 10 + '0');
 		}
 		_putchar('\n');
 	}
