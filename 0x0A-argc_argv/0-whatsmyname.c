@@ -1,0 +1,14 @@
+#include <stdio.h>
+/**
+ * main - main function.
+ * @argc: the size of the argv array.
+ * @argv: An array containing the program command line arguments
+ * Return: always 0
+ */
+
+int main(int argc, char *argv[])
+{
+	UNUSED(argc);
+	printf("%s\n", argv[0]);
+	return (0);
+}
