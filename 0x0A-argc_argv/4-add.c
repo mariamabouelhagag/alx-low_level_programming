@@ -1,20 +1,16 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#define UNUSED(x) (void)(x)
 int string_digit(char *s);
 /**
- * main -main function.
- * @argc: the size of the argv array.
- * @argv: An array containing the program command line arguments
- * Return: always 0
- */
-int main(int argc, char *argv[])
+  * main - program that adds positive numbers
+  * @argc: number of command line arguments
+  * @argv: array of string
+  * Return: always 0
+  */
+int main(int argc, char **argv)
 {
-	int i;
-	int sum = 0;
-
-	UNUSED(argv);
+	int i, sum = 0;
 
 	if (argc == 1)
 	{
@@ -22,12 +18,11 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		for (i = 1; i < argc ; i++)
+		for (i = 1; i < argc; i++)
 		{
 			if (string_digit(argv[i]))
 			{
-				sum += atoi(argv[i]);
-				printf("%d\n", sum);
+				sum = sum + atoi(argv[i]);
 			}
 			else
 			{
@@ -35,6 +30,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
+		printf("%d\n", sum);
 	}
 	return (0);
 }
@@ -45,12 +41,11 @@ int main(int argc, char *argv[])
   */
 int string_digit(char *s)
 {
-	int i;
-	int c = 1;
+	int i, c = 1;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (!((s[i] <= 48) && (s[i] <= 57)))
+		if (!((s[i] >= 48) && (s[i] <= 57)))
 		{
 			c = c * 0;
 		}
